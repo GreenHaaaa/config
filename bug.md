@@ -1,0 +1,2 @@
+1. 同步中转场细分计划的时候需要过滤删除标准为为1已删除的数据，否则中转场代码细分计划会出现同一个中转场多条记录的bug
+2. 细分计划的是否细分标准最好在数据库层面设置一个默认值SQL如下 alter table tt_transfer_xiaojian_sanhuo_sorter_subdivide_plan_determination ALTER  COLUMN is_subdivide_plan set DEFAULT 0;
